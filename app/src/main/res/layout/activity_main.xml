@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/background"
+    tools:context=".MainActivity"
+    android:background="@color/textBackground">
+
+    <TextView
+        android:id="@+id/TextappName"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/background"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:paddingStart="20dp"
+        android:text="@string/app_name"
+        android:textColor="@color/app_name_color"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="@color/textBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/TextappName" />
+
+    <TextView
+        android:id="@+id/textUpdateDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/textBackground"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toLeftOf="@id/background"
+        app:layout_constraintRight_toRightOf="@id/background"
+        app:layout_constraintTop_toTopOf="@id/background" />
+
+    <TextView
+        android:id="@+id/textCurrency"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/textHeight"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/border"
+        android:gravity="center_vertical"
+        android:hint="Para Birimi"
+        android:textCursorDrawable="@drawable/cursor"
+        android:paddingStart="10dp"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="@id/background"
+        app:layout_constraintRight_toRightOf="@id/background"
+        app:layout_constraintTop_toTopOf="@id/background" />
+
+    <ImageView
+        android:id="@+id/iconTr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/textBackground"
+        app:layout_constraintLeft_toRightOf="@id/iconExc"
+        app:layout_constraintRight_toRightOf="@id/background"
+        app:layout_constraintTop_toBottomOf="@id/textCurrency"
+        app:srcCompat="@drawable/tr_icon" />
+
+    <ImageView
+        android:id="@+id/iconExc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/textBackground"
+        app:layout_constraintLeft_toRightOf="@id/iconCurrent"
+        app:layout_constraintRight_toLeftOf="@id/iconTr"
+        app:layout_constraintTop_toBottomOf="@id/textCurrency"
+        app:srcCompat="@drawable/exchange_icon1" />
+
+    <ImageView
+        android:id="@+id/iconCurrent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/textBackground"
+        app:layout_constraintLeft_toLeftOf="@id/background"
+        app:layout_constraintRight_toLeftOf="@id/iconExc"
+        app:layout_constraintTop_toBottomOf="@id/textCurrency"
+        app:srcCompat="@drawable/quest_icon" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lütfen döviz miktarını giriniz"
+        android:textStyle="bold"
+        android:id="@+id/TextMoney"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintTop_toBottomOf="@id/iconTr"
+        app:layout_constraintLeft_toLeftOf="@id/background"/>
+
+
+    <EditText
+        android:id="@+id/editTextMoney"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:inputType="numberDecimal"
+        android:padding="10dp"
+        android:textColor="#646767"
+        android:text="1.0"
+        app:layout_constraintLeft_toLeftOf="@id/background"
+        app:layout_constraintRight_toRightOf="@id/background"
+        app:layout_constraintTop_toBottomOf="@id/TextMoney" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:background="@color/textBackground"
+        android:text="Döviz Alış"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/textForexBuying"
+        app:layout_constraintLeft_toLeftOf="@id/textForexBuying" />
+
+    <TextView
+        android:id="@+id/textForexBuying"
+        android:layout_width="@dimen/textWidth"
+        android:layout_height="@dimen/textHeight"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/border"
+        android:gravity="center"
+        android:hint="0"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/textBanknoteBuying"
+        app:layout_constraintLeft_toLeftOf="@id/background"
+        app:layout_constraintRight_toLeftOf="@id/textForexSelling" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:background="@color/textBackground"
+        android:text="Döviz Satış"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/textForexSelling"
+        app:layout_constraintLeft_toLeftOf="@id/textForexSelling" />
+
+    <TextView
+        android:id="@+id/textForexSelling"
+        android:layout_width="@dimen/textWidth"
+        android:layout_height="@dimen/textHeight"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/border"
+        android:gravity="center"
+        android:hint="0"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/textBanknoteSelling"
+        app:layout_constraintLeft_toRightOf="@id/textForexBuying"
+        app:layout_constraintRight_toRightOf="@id/background" />
+
+    <TextView
+        android:id="@+id/textBanknoteBuying"
+        android:layout_width="@dimen/textWidth"
+        android:layout_height="@dimen/textHeight"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/border"
+        android:gravity="center"
+        android:hint="0"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/background"
+        app:layout_constraintLeft_toLeftOf="@id/background"
+        app:layout_constraintRight_toLeftOf="@id/textBanknoteSelling" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:background="@color/textBackground"
+        android:text="Efektif Alış"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/textBanknoteBuying"
+        app:layout_constraintLeft_toLeftOf="@id/textBanknoteBuying" />
+
+    <TextView
+        android:id="@+id/textBanknoteSelling"
+        android:layout_width="@dimen/textWidth"
+        android:layout_height="@dimen/textHeight"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/border"
+        android:gravity="center"
+        android:hint="0"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/background"
+        app:layout_constraintLeft_toRightOf="@id/textBanknoteBuying"
+        app:layout_constraintRight_toRightOf="@id/background" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:background="@color/textBackground"
+        android:text="Efektif Satış"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/textBanknoteSelling"
+        app:layout_constraintLeft_toLeftOf="@id/textBanknoteSelling" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

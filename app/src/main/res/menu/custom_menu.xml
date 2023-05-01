@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/paraBirimi"
+        android:title="ABD DOLARI" />
+
+    <item
+        android:id="@+id/paraBirimi1"
+        android:title="AVUSTRALYA DOLARI" />
+
+    <item
+        android:id="@+id/paraBirimi2"
+        android:title="DANİMARKA KRONU" />
+
+    <item
+        android:id="@+id/paraBirimi3"
+        android:title="EURO" />
+
+    <item
+        android:id="@+id/paraBirimi4"
+        android:title="İNGİLİZ STERLİNİ"
+        />
+    <item
+        android:id="@+id/paraBirimi5"
+        android:title="İSVİÇRE FRANGI" />
+
+    <item
+        android:id="@+id/paraBirimi6"
+        android:title="İSVEÇ KRONU" />
+
+    <item
+        android:id="@+id/paraBirimi7"
+        android:title="KANADA DOLARI" />
+
+    <item
+        android:id="@+id/paraBirimi8"
+        android:title="KUVEYT DİNARI" />
+
+    <item
+        android:id="@+id/paraBirimi9"
+        android:title="NORVEÇ KRONU" />
+    <item
+        android:id="@+id/paraBirimi10"
+        android:title="SUUDİ ARABİSTAN RİYALİ" />
+
+    <item
+        android:id="@+id/paraBirimi11"
+        android:title="JAPON YENİ" />
+
+
+
+</menu>
