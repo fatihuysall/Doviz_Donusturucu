@@ -1,8 +1,7 @@
 # Doviz_Donusturucu uygulaması
-T.C. merkez bankası döviz verilerini internet sitesinden alıp kullanıcıya gösteren.
-Döviz miktarı değiştirildiğinde tl karşılığını düzenleyen bir programdır.
-![resim](https://user-images.githubusercontent.com/108468260/235965543-5f974fc5-2242-46aa-b33b-8deec6312b35.png)
-![resim](https://user-images.githubusercontent.com/108468260/235965612-2967756d-61a5-4c3c-934c-98336a69b9fc.png)
-![resim](https://user-images.githubusercontent.com/108468260/235965650-f75b3716-86e1-4dd9-ad3c-aab50310f8e8.png)
+T.C. merkez bankası döviz verilerini internet sitesinden alıp kullanıcıya gösteren bir programdır.
+![resim](https://user-images.githubusercontent.com/108468260/235966078-cf05029a-2409-436d-bd0e-132f52091c7a.png)
+![resim](https://user-images.githubusercontent.com/108468260/235966151-b7f76edc-d05d-436b-9be5-c1f2abb6ce04.png)
+![resim](https://user-images.githubusercontent.com/108468260/235966229-4ea3c871-1fdd-4b4f-83e9-148b602895ca.png)
 
 
